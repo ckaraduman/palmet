@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -11,6 +10,7 @@ class PageController extends Controller
   {
       //Test amaçlı ilk fonksiyon tanımlaması yapılıyor.
       echo "Test amaçlı ilk fonksiyonumuz çalıştı!";
+      echo "<a href='".route('anamenu')."'>Ana Menü</a>";
   }
 
     /**
