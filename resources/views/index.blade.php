@@ -1,4 +1,3 @@
-<p> Adı : {{$ad}} <br> Soyadı : {{$soyad}} </p>
 <?php
 
 // GET Methodundan Zararlı Kodlar Gönderilmemesi için

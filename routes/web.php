@@ -15,8 +15,12 @@ use App\Http\Controllers\PageController;
 // Route::get('/', function () {
 //     return view('index');
 // });
-Route::get('/giris',[MainController::class,'giris'])->name('anamenu');
-Route::get('/test',[PageController::class,'test'])->name('test');
+Route::get('/',[MainController::class,'start'])->name('start');
+// Route::get('/giris',[MainController::class,'giris'])->name('anamenu');
+// Route::get('/test',[PageController::class,'test'])->name('test');
+Route::get('/git',[MainController::class,'f1'])->name('f1');
+Route::post('/kisiekle',[MainController::class,'kisiekle'])->name('kisiekle');
+// Route::post('/kisiekle',[MainController::class,'kisi_ekle'])->name('kisiekle');
 // Route::get('/','App\Http\Controllers\MainController@giris');
 Route::get('/info', function () {
     return "Bu yazılım Cem İlker Karaduman tarafından Ocak 2022 tarihinde üretilmeye başlanmıştır.";
@@ -31,6 +35,6 @@ Route::group(['namespace'=>'App\Http\Controllers\Part1'], function(){
   Route::get('deneme','TestController@deneme');
 });
 Route::get('/gonder', function () {
-    $data=["ad" => "cem", "soyad" => "karaduman"]; 
+    $data=["ad" => "cem", "soyad" => "karaduman"];
     return view('index',$data);
 });
